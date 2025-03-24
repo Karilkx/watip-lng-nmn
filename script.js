@@ -4,26 +4,26 @@ let questionText = document.getElementById("question");
 let catImage = document.getElementById("cat-img");
 
 let yesQuestions = [
-    "220 ba ean? :< (oo nga / jk lng)",
-    "Baka namali kalang nang tap, gi na :< (sorry:< / 22o nga)",
-    "22o tlga? (oo nga / hindi)",
-    "Weh?? (oo nga / Hindi eh)",
-    "Di nga? (oo nga / Ayoko na)",
-    "Bat parang napipilitan ka? (Medyo lang / Oo nga eh)",
-    "D'wag na, parang napipilitan kalang eh (Hindi / Okay sige ayoko na / Ewan)"
+    "220 ba ean? :<",
+    "Baka namali kalang nang tap, gi na :<",
+    "22o tlga?",
+    "Weh??",
+    "Di nga?",
+    "Bat parang napipilitan ka?",
+    "D'wag na, parang napipilitan kalang eh"
 ];
 
 let noQuestions = [
-    "Pls?:< (Sige na nga / Ayoko)",
-    "C-gurado naba ean?:<< (Oo naman! / Ewan)",
-    "Last chance:<<< (Bakit ba kasi / No pa rin)",
-    "Baka gusto mo pag-isipan ulit?:<<<< (No is no / Pwede next time?)",
-    "Sakit mo nmn:<<<<<< peru pls? (sorry / No pa rin)",
-    "Baka kaya pato late game?:<<<<<< (Malay mo / Di talaga)",
-    "Ayaw mo maawa?:<<<<<<<< (Wala akong awa / Sige na nga)",
-    "Kung ako nlng sana~~ baks nmn:<<<<<<<<< (ayuko nga / pakeko)",
-    "Awa nlng tlga baks,awa nlng:<<<<<<<<< (Awa lang pero no pa rin / Baka)",
-    "Tigas nang hart mo! (Okay fine sige na / Talaga)"
+    "Pls?:<",
+    "C-gurado naba ean?:<<",
+    "Last chance??:<<<",
+    "Baka gusto mo pag-isipan ulit?:<<<<",
+    "Sakit mo nmn:<<<<<< peru pls?",
+    "Baka kaya pato late game?:<<<<<<",
+    "Ayaw mo maawa?:<<<<<<<<",
+    "Kung ako nlng sana~~ baks nmn:<<<<<<<<<",
+    "Awa nlng tlga baks,awa nlng:<<<<<<<<<",
+    "Tigas nmn ng hart mo:<<"
 ];
 
 let yesIndex = 0;
@@ -36,9 +36,9 @@ function nextQuestion(answer) {
             questionText.innerText = yesQuestions[yesIndex];
             yesIndex++;
         } else {
-            questionText.innerText = "🎉 YES! Edi tayo na 😍";
-            yesBtn.style.display = "none";
-            noBtn.style.display = "none";
+            questionText.innerText = "🎉 YES! Peru bat parang masama loob mo?:<<";
+            daming alamBtn.style.display = "none";
+            oo ngaBtn.style.display = "none";
         }
         changeCatImage();
     } else {
@@ -48,9 +48,9 @@ function nextQuestion(answer) {
             yesSize += 5; // Palaki nang palaki ang Yes button
             yesBtn.style.fontSize = yesSize + "px";
         } else {
-            questionText.innerText = "😭 Hala, di ka talaga nadala... Okay lang, move on na ako. *sobs*";
-            yesBtn.style.display = "none";
-            noBtn.style.display = "none";
+            questionText.innerText = "Tigas tlga nang puso! awa nlng ouh,sana makonsensya ka";
+            pakekoBtn.style.display = "none";
+            ano gagawin?Btn.style.display = "none";
         }
         changeCatImage();
     }
