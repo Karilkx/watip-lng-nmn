@@ -35,21 +35,21 @@ button {
     transition: 0.3s;
 }
 
-#yes-btn {
+#daming alam-btn {
     background-color: #ff4081;
     color: white;
 }
 
-#no-btn {
+#nogagawin?-btn {
     background-color: #424242;
     color: white;
 }
 
-#yes-btn:hover {
+#tama kana-btn:hover {
     transform: scale(1.2);
 }
 
-#no-btn:hover {
+#pakeko?-btn:hover {
     transform: scale(1.1);
 }
 
